@@ -18,11 +18,11 @@
         <NuxtLink class="text-3xl font-bold font-heading" to="/">
           <img class="h-9" src="../assets/images/nuxt-logo.png" alt="logo">
         </NuxtLink>
-
+        <h2 class="text-2xl font-bold ml-4">ATTIRE</h2>
         <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-          <li><NuxtLink class="hover:text-gray-200" to="/">Home</NuxtLink></li>
-          <li><NuxtLink class="hover:text-gray-200" to="/about">About</NuxtLink></li>
-          <li><NuxtLink class="btn hover:text-gray-200" to="/products">Products</NuxtLink></li>
+          <li><NuxtLink class="hover:text-gray-200 button" to="/">Home</NuxtLink></li>
+          <li><NuxtLink class="hover:text-gray-200 button" to="/about">About</NuxtLink></li>
+          <li><NuxtLink class="btn hover:text-gray-200 button" to="/products">Products</NuxtLink></li>
         </ul>
 
         <div class="hidden xl:flex items-center space-x-5 items-center">
@@ -77,7 +77,7 @@
       <ul class="flex gap-4">
         <li><NuxtLink to="/">Home</NuxtLink></li>
         <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/products">Merch</NuxtLink></li>
+        <li><NuxtLink to="/products">Products</NuxtLink></li>
       </ul>
     </footer>
     <div class="container mx-auto p-4">
@@ -86,7 +86,27 @@
 </template>
 
 <style scoped>
-.router-link-exact-active {
+.button-active {
   color: #12b488;
 }
+.button {
+  --bg: #111827;
+  --hover-bg: #12b488;
+  --hover-text: #000;
+  --bgt: #07090f;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bgt);
+}
+
 </style>

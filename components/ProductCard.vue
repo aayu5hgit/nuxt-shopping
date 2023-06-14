@@ -6,9 +6,8 @@
         <p class="btn my-4">View Details</p>
       </NuxtLink>
     </div> -->
-    <div class="card">
-    <!-- <div class="card-img"><div class="img"><img :src="`${product.image}`"  /></div></div> -->
-    <img :src="`${product.image}`" class="w-28 h-28 self-center"/>
+    <div class="card ">
+    <img :src="`${product.image}`" class="w-28 h-28 self-center hover:scale-110 tansition duration-300 cursor-pointer"/>
     <div class="card-title">{{ product.title }}</div>
    
     <hr class="card-divider">
@@ -16,7 +15,7 @@
         <div class="card-price">${{product.price}}</div>
         <NuxtLink :to="`/products/${product.id}`">
         <button class="card-btn">
-          Details
+          View
         </button>
     </NuxtLink>
     </div>
