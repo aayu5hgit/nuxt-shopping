@@ -14,6 +14,6 @@
     const { data: product } = await useFetch(uri, {key:id})
   
     definePageMeta({
-      layout: "products",
+      layouts: "products",
     })
   </script>
