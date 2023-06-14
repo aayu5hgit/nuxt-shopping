@@ -65,7 +65,6 @@
     
   </section>
 </div>
-
 <div class="fixed bottom-0 right-0 mb-2 mr-4 z-10">
     <div>
         <NuxtLink to="https://www.github.com/aayu5hgit" title="Github"  target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12 ">
