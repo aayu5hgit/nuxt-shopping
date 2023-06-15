@@ -126,6 +126,7 @@
     </div>
   </div>
   <Featured/>
+  <Review/>
 </template>
 
 <style scoped>

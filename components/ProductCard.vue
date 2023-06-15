@@ -23,6 +23,7 @@
   </template>
   
   <script setup>
+  
     const { product } = defineProps(['product'])
   </script>
   
