@@ -14,12 +14,44 @@ onMounted(() => {
 
 </script>
 <template>
-  <div>
-    <p class="mt-8 mb-16">Hello {{ user?.email }}</p>
+  <div class="flex flex-row  justify-center items-center">
+    <div class="card mb-6 ">
+  <div class="content">
+    <div class="back">
+      <div class="back-content">
+        <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px" fill="#ffffff">
+
+        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+
+    
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#12b488" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+       
+
+
+        </svg>
+        <strong class="text-2xl">Your Profile</strong>
+        
+      </div>
+    </div>
+      <div class="front-content">
+        <div class="description">
+          <div class="title">
+            <p class="title text-lg">
+              Email: {{ user?.email }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flex flex-row  justify-center items-center">
     <button
         v-if="user"
         @click="client.auth.signOut()"
-        class="btn hover:text-gray-200 button"
+        class=" button"
       >
       <div class="flex justify-content-center">
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3.25c0-.966.784-1.75 1.75-1.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25v17.5c0 .138.112.25.25.25h5.5a.75.75 0 0 1 0 1.5h-5.5A1.75 1.75 0 0 1 3 20.75Zm16.006 9.5H10.75a.75.75 0 0 1 0-1.5h8.256l-3.3-3.484a.75.75 0 0 1 1.088-1.032l4.5 4.75a.75.75 0 0 1 0 1.032l-4.5 4.75a.75.75 0 0 1-1.088-1.032Z"/></svg>
@@ -27,7 +59,7 @@ onMounted(() => {
     </div>
 
       </button>
-  </div>
+    </div>
 </template>
 
 <style>
@@ -50,4 +82,6 @@ onMounted(() => {
   background: var(--hover-bg);
   box-shadow: 0.25rem 0.25rem var(--bgt);
 }
+
+
 </style>

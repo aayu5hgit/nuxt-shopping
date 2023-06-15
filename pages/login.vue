@@ -14,7 +14,8 @@ const client = useSupabaseClient()
 const signUp = async () => {
   const { data, error } = await client.auth.signUp({
     email: email.value,
-    password: password.value
+    password: password.value,
+    phone: phone.value
   })
   console.log('data', data)
   console.log('error', error)
@@ -23,7 +24,7 @@ const signUp = async () => {
 const login = async () => {
   const { data, error } = await client.auth.signInWithPassword({
     email: email.value,
-    password: password.value
+    password: password.value,
   })
   console.log('data', data)
   console.log('error', error)
