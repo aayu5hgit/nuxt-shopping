@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.25.0",
-    "cookie-universal-nuxt": "^2.2.2"
+    "cookie-universal-nuxt": "^2.2.2",
+    "v-onboarding": "^2.5.1"
   }
 }

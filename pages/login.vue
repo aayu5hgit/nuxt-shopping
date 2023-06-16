@@ -12,28 +12,27 @@ const isSignUp = ref(false)
 const client = useSupabaseClient()
 
 const signUp = async () => {
-  const { data, error } = await client.auth.signUp({
+  const { user, error } = await client.auth.signUp({
     email: email.value,
-    password: password.value,
-    phone: phone.value
+    password: password.value
   })
-  console.log('data', data)
+  console.log('user', user)
   console.log('error', error)
 }
 
 const login = async () => {
-  const { data, error } = await client.auth.signInWithPassword({
+  const { user, error } = await client.auth.signInWithPassword({
     email: email.value,
     password: password.value,
   })
-  console.log('data', data)
+  console.log('user', user)
   console.log('error', error)
 }
 
-const data = useSupabaseUser()
+const user = useSupabaseUser()
 onMounted(() => {
   watchEffect(() => {
-    if (data.value) {
+    if (user.value) {
       navigateTo('/')
     }
   })
