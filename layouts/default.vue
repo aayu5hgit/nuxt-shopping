@@ -76,10 +76,11 @@
     </div>
     <footer class="xl:hidden container mx-auto p-4 flex justify-between border-t-2">
       <ul class="flex gap-4">
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/products">Products</NuxtLink></li>
-        <li><NuxtLink to="/login">Login</NuxtLink></li>
+        <li><NuxtLink to="/" class="button-sm">Home</NuxtLink></li>
+        <li><NuxtLink to="/about" class="button-sm">About</NuxtLink></li>
+        <li><NuxtLink to="/products" class="button-sm">Products</NuxtLink></li>
+        <li><NuxtLink to="/login" class="button-sm">Login</NuxtLink></li>
+        <li><NuxtLink to="/profile" class="button-sm">Profile</NuxtLink></li>
       </ul>
     </footer>
     <div class="container mx-auto p-4">
@@ -103,7 +104,26 @@
   background: var(--bg);
   transition: 0.2s;
 }
+.button-sm {
+  --bg: #111827;
+  --hover-bg: #12b488;
+  --hover-text: #000;
+  --bgt: #07090f;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.3em 0.3em;
+  background: var(--bg);
+  transition: 0.2s;
+  font-weight: 600;
+}
 
+.button-sm:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bgt);
+}
 .button:hover {
   color: var(--hover-text);
   transform: translate(-0.25rem, -0.25rem);
