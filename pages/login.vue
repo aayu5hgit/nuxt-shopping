@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 definePageMeta({
   middleware: ['auth']
 })
-
+  
 const email = ref('')
 const password = ref('')
 const isSignUp = ref(false)

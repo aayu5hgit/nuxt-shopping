@@ -37,9 +37,24 @@ onMounted(() => {
     </div>
       <div class="front-content">
         <div class="description">
-          <div class="title">
+          <div class="title border-b-2 border-[#12B488]">
             <p class="title text-lg">
               Email: {{ user?.email }}
+            </p>
+          </div>
+          <div class="title border-b-2 border-[#12B488]">
+            <p class="title text-lg">
+              Unique ID: {{ user?.id }}
+            </p>
+          </div>
+          <div class="title border-b-2 border-[#12B488]">
+            <p class="title text-lg">
+              Last SignIn: {{ user?.last_sign_in_at }}
+            </p>
+          </div>
+          <div class="title border-b-2 border-[#12B488]">
+            <p class="title text-lg">
+              Account Created At : {{ user?.created_at }}
             </p>
           </div>
         </div>
