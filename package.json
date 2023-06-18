@@ -19,6 +19,8 @@
     "@supabase/supabase-js": "^2.25.0",
     "cookie-universal-nuxt": "^2.2.2",
     "mosha-vue-toastify": "^1.0.23",
-    "v-onboarding": "^2.5.1"
+    "next-vue-device-detector": "^0.0.1",
+    "v-onboarding": "^2.5.1",
+    "vue-mobile-detection": "^2.0.1"
   }
 }

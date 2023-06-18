@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import { defineComponent } from "vue";
 import { createToast } from "mosha-vue-toastify";
 import "mosha-vue-toastify/dist/style.css";
@@ -14,6 +15,15 @@ onMounted(() => {
     }
   });
 });
+
+let details = navigator.userAgent;
+let regexp = /android|iphone|kindle|ipad/i;
+let isMobileDevice = regexp.test(details);
+if (isMobileDevice) {
+	console.log("You are using a Mobile Device");
+} else {
+	console.log("You are using Desktop");
+}
 
 const toast = () => {
   createToast(
@@ -83,6 +93,14 @@ const toast = () => {
             <div class="title border-b-2 border-[#12B488]">
               <p class="title text-lg">
                 Account Created At : {{ user?.created_at }} <br />
+              </p>
+            </div>
+            <div class="title border-b-2 border-[#12B488]">
+              <p class="title text-lg">
+                <div class="mobile">Device Type: 
+                  <span v-if="isMobileDevice">Mobile</span>
+                  <span v-else>Desktop</span>
+                </div>
               </p>
             </div>
           </div>
