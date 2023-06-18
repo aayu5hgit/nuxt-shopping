@@ -157,6 +157,7 @@
   </div>
   <Featured id="bar"/>
   <Review id="rev"/>
+  <Footer/>
 </template>
 
 <style scoped>

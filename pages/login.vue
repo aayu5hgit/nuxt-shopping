@@ -1,10 +1,21 @@
 <script setup lang="js">
 import { createClient } from "@supabase/supabase-js";
+import { defineComponent } from 'vue'
+import { createToast } from 'mosha-vue-toastify';
+import 'mosha-vue-toastify/dist/style.css'
 
-definePageMeta({
-  middleware: ['auth']
+const toast = () => {
+  createToast({
+title: 'Success',
+description: 'Verification Sent on Registered Email'
+},
+{
+showIcon: 'true',
+type: 'success',
 })
-  
+    return { toast }
+}
+
 const email = ref('')
 const password = ref('')
 const isSignUp = ref(false)
@@ -14,7 +25,7 @@ const client = useSupabaseClient()
 const signUp = async () => {
   const { user, error } = await client.auth.signUp({
     email: email.value,
-    password: password.value
+    password: password.value,
   })
   console.log('user', user)
   console.log('error', error)
@@ -63,12 +74,9 @@ onMounted(() => {
         class="p-2 text-black rounded bg-charcoal-600 mb-4"
         required
       />
-      <button
-        type="submit"
-        class="button"
-      >
-        <span v-if="isSignUp"> Sign up </span>
-        <span v-else> Log in </span>
+      <button type="submit" class="button">
+        <span v-if="isSignUp" @click="toast"> Sign up </span>
+        <span v-else > Log in </span>
       </button>
     </form>
     <button

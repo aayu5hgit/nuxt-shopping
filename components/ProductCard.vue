@@ -1,39 +1,33 @@
 <template>
-    <!-- <div class="card text-center">
-      <img :src="`${product.image}`" class="thumb" />
-      <p class="font-bold text-gray-500 m-4 truncate">{{ product.title }}</p>
-      <NuxtLink :to="`/products/${product.id}`">
-        <p class="btn my-4">View Details</p>
-      </NuxtLink>
-    </div> -->
-    <div class="card ">
-    <img :src="`${product.image}`" class="w-28 h-28 self-center hover:scale-110 tansition duration-300 cursor-pointer"/>
+  <div class="card">
+    <img
+      :src="`${product.image}`"
+      class="w-28 h-28 self-center hover:scale-110 tansition duration-300 cursor-pointer"
+    />
     <div class="card-title">{{ product.title }}</div>
-   
-    <hr class="card-divider">
+
+    <hr class="card-divider" />
     <div class="card-footer">
-        <div class="card-price">${{product.price}}</div>
-        <NuxtLink :to="`/products/${product.id}`">
-        <button class="card-btn">
-          View
-        </button>
-    </NuxtLink>
+      <div class="card-price">${{ product.price }}</div>
+      <NuxtLink :to="`/products/${product.id}`">
+        <button class="card-btn">View</button>
+      </NuxtLink>
     </div>
-</div>
-  </template>
-  
-  <script setup>
-  
-    const { product } = defineProps(['product'])
-  </script>
-  
-  <style scoped>
-   .card {
+  </div>
+</template>
+
+
+<script setup>
+const { product } = defineProps(["product"]);
+</script>
+
+<style scoped>
+.card {
   --font-color: #323232;
   --font-color-sub: #666;
   --bg-color: #fff;
   --main-color: #111827;
-  --main-focus: #12B488;
+  --main-focus: #12b488;
   width: 230px;
   height: 300px;
   background: var(--bg-color);
@@ -45,7 +39,8 @@
   justify-content: flex-start;
   padding: 20px;
   gap: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .card:last-child {
@@ -110,5 +105,4 @@
 .card-btn:active {
   transform: translateY(3px);
 }
-
-  </style>
+</style>
