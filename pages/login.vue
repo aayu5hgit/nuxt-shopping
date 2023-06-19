@@ -22,6 +22,7 @@ const isSignUp = ref(false)
 
 const client = useSupabaseClient()
 
+
 const signUp = async () => {
   const { user, error } = await client.auth.signUp({
     email: email.value,
@@ -29,6 +30,7 @@ const signUp = async () => {
   })
   console.log('user', user)
   console.log('error', error)
+  
 }
 
 const login = async () => {
@@ -38,7 +40,24 @@ const login = async () => {
   })
   console.log('user', user)
   console.log('error', error)
+  
 }
+
+
+//   async function signInWithGitHub() {
+//   const { data, error } = await supabase.auth.signInWithOAuth({
+//     provider: 'github',
+//   })
+// }
+
+const signInWithGitHub = async () => {
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: 'github',
+  })
+  console.log('data', data)
+  console.log('error', error)
+}
+
 
 const user = useSupabaseUser()
 onMounted(() => {
@@ -74,9 +93,18 @@ onMounted(() => {
         class="p-2 text-black rounded bg-charcoal-600 mb-4"
         required
       />
+
       <button type="submit" class="button">
         <span v-if="isSignUp" @click="toast"> Sign up </span>
         <span v-else > Log in </span>
+      </button>
+     
+    </form>
+    
+      <form
+      class="flex flex-col gap-2 mt-12"
+    ><button type="submit" class="button" @click="signInWithGitHub">
+        Sign in With GitHub
       </button>
     </form>
     <button
