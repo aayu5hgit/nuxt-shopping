@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import { defineComponent } from "vue";
 import { createToast } from "mosha-vue-toastify";
 import "mosha-vue-toastify/dist/style.css";
@@ -20,9 +19,9 @@ let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
 let isMobileDevice = regexp.test(details);
 if (isMobileDevice) {
-	console.log("You are using a Mobile Device");
+  console.log("You are using a Mobile Device");
 } else {
-	console.log("You are using Desktop");
+  console.log("You are using Desktop");
 }
 
 const toast = () => {
@@ -41,10 +40,10 @@ const toast = () => {
 </script>
 <template>
   <div class="flex flex-row justify-center items-center">
-    <div class="card mb-6">
-      <div class="content">
-        <div class="back">
-          <div class="back-content">
+    <div class="card mb-6  rounded-lg	">
+      <div class="content ">
+        <div class="back ">
+          <div class="back-content ">
             <svg
               stroke="#ffffff"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -77,33 +76,37 @@ const toast = () => {
             <strong class="text-2xl">Your Profile</strong>
           </div>
         </div>
-        <div class="front-content">
-          <div class="description">
-            <div class="title border-b-2 border-[#12B488]">
-              <p class="title text-lg">Email: {{ user?.email }}</p>
-            </div>
-            <div class="title border-b-2 border-[#12B488]">
-              <p class="title text-lg">Unique ID: {{ user?.id }}</p>
-            </div>
-            <div class="title border-b-2 border-[#12B488]">
-              <p class="title text-lg">
-                Last SignIn: {{ user?.last_sign_in_at }}
-              </p>
-            </div>
-            <div class="title border-b-2 border-[#12B488]">
-              <p class="title text-lg">
-                Account Created At : {{ user?.created_at }} <br />
-              </p>
-            </div>
-            <div class="title border-b-2 border-[#12B488]">
-              <p class="title text-lg">
-                <div class="mobile">Device Type: 
-                  <span v-if="isMobileDevice">Mobile</span>
-                  <span v-else>Desktop</span>
-                </div>
-              </p>
-            </div>
-          </div>
+
+        <div class="title border-t-2 border-[#12B488]">
+          <p class="title text-lg text-gray-600">
+            <span class="font-semibold text-black"> Email: </span>
+            {{ user?.email }}
+          </p>
+        </div>
+        <div class="title ">
+          <p class="title text-lg text-gray-600">
+            <span class="font-semibold text-black">Unique ID: </span>
+            {{ user?.id }}
+          </p>
+        </div>
+        <div class="title">
+          <p class="title text-lg text-gray-600">
+            <span class="font-semibold text-black"> Last SignIn: </span>
+            {{ user?.last_sign_in_at }}
+          </p>
+        </div>
+        <div class="title">
+          <p class="title text-lg text-gray-600">
+            <span class="font-semibold text-black"> Account Created At: </span>
+            {{ user?.created_at }} <br />
+          </p>
+        </div>
+        <div class="title border-b-2 border-[#12B488]">
+          <p class="title text-lg text-gray-600 mobile">
+            <span class="font-semibold text-black"> Device Type: </span>
+            <span v-if="isMobileDevice">Mobile</span>
+            <span v-else>Desktop</span>
+          </p>
         </div>
       </div>
     </div>

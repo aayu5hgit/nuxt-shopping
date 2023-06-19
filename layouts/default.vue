@@ -74,8 +74,8 @@
     </div>
 </div>
     </div>
-    <footer class="xl:hidden container mx-auto p-4 flex justify-between border-t-2">
-      <ul class="flex gap-4">
+    <footer class="xl:hidden container mx-auto p-4 flex justify-between bg-[#111827]">
+      <ul class="flex gap-3 ">
         <li><NuxtLink to="/" class="button-sm">Home</NuxtLink></li>
         <li><NuxtLink to="/about" class="button-sm">About</NuxtLink></li>
         <li><NuxtLink to="/products" class="button-sm">Products</NuxtLink></li>
