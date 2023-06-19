@@ -146,7 +146,7 @@
             <div>
               <img
                 class="w-full"
-                src="https://fpdl.in/uploads/20230614200700_[fpdl.in]_women-character-shopping-banner-simple-design_618890-288_normal.jpg"
+                src="../assets/images/shopping-cart.png"
                 alt=""
               />
             </div>

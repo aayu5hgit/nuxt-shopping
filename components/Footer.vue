@@ -8,7 +8,7 @@
           <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             <img
               class="w-auto h-9"
-              src="../assets/images/nuxt-logo.png"
+              src="../assets/images/attire_lg.png"
               alt="Logo"
             />
 

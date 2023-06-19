@@ -66,7 +66,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="max-w-lg mx-auto mt-8 text-center">
+  <div class="max-w-lg mx-auto mt-8 text-center"> 
+   
     <h1 class="text-3xl font-black text-[#111827]">ATTIRE</h1>
     <p class="mt-4 font-semibold">
       Fashion that speaks volumes, without saying a word
