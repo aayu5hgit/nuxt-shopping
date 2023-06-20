@@ -146,7 +146,7 @@
                   title=""
                   class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
-                  Delivery Details
+                  Delivery Details 
                 </a>
               </li>
 
@@ -166,7 +166,7 @@
                   title=""
                   class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
-                  Privacy Policy
+                  Privacy Policy 
                 </a>
               </li>
             </ul>
@@ -212,6 +212,18 @@
 </template>
 
 <script>
+// const url = 'https://fake-valid-cc-data-generator.p.rapidapi.com/request/?visa_type=visa';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '88ece982d5mshd0b37e6b16f9dc2p1eac94jsn1b7f2e1bd49e',
+// 		'X-RapidAPI-Host': 'fake-valid-cc-data-generator.p.rapidapi.com'
+// 	}
+// };
+
+// 	const response = await fetch(url, options);
+// 	const result = await response.text();
+// 	console.log(result);
 export default {};
 </script>
 

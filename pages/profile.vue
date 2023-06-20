@@ -37,6 +37,18 @@ const toast = () => {
   );
   return { toast };
 };
+
+const url = 'https://codzz-qr-cods.p.rapidapi.com/getQrcode?type=url&value=https%3A%2F%2Fnuxtshopping.vercel.app%2F';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '88ece982d5mshd0b37e6b16f9dc2p1eac94jsn1b7f2e1bd49e',
+		'X-RapidAPI-Host': 'codzz-qr-cods.p.rapidapi.com'
+	}
+};
+
+	const response = await fetch(url, options);
+	const result = await response.text();
 </script>
 <template>
   <div class="flex flex-row justify-center items-center">
@@ -101,6 +113,7 @@ const toast = () => {
             {{ user?.created_at }} <br />
           </p>
         </div>
+        
         <div class="title border-b-2 border-[#12B488]">
           <p class="title text-lg text-gray-600 mobile">
             <span class="font-semibold text-black"> Device Type: </span>
