@@ -100,13 +100,6 @@ onMounted(() => {
       </button>
      
     </form>
-    
-      <!-- <form
-      class="flex flex-col gap-2 mt-12"
-    ><button type="submit" class="button" @click="signInWithGitHub()">
-        Sign in With GitHub
-      </button>
-    </form> -->
     <button
       @click="isSignUp = !isSignUp"
       class="w-[100%] mt-8 text-sm self-center underline text-gray-500"
