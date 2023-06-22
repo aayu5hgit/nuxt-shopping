@@ -1,16 +1,20 @@
+<script>
+// const client = useSupabaseClient();
+// function logout() {
+//   if(client.auth.signOut()){
+//     console.log(client);
+//   }
+// }
+// export default {
+//         methods: {
+//             logout() {
+//                 client.auth.signOut
+//             }
+//         }
+//     }
+</script>
 <template>
   <div>
-    <!-- <header class="shadow-sm bg-white">
-        <nav class="container mx-auto p-4 flex justify-between">
-          <NuxtLink to="/" class="font-bold">Nuxt Dojo</NuxtLink>
-          <ul class="flex gap-4">
-            <li><NuxtLink to="/">Home</NuxtLink></li>
-            <li><NuxtLink to="/about">About</NuxtLink></li>
-            <li><NuxtLink to="/products" class="btn">Merch</NuxtLink></li>
-          </ul>
-        </nav>
-      </header> -->
-
 <div class="flex flex-wrap  place-items-top ">
   <section class="relative mx-auto">
     <nav class="flex justify-between bg-gray-900 text-white w-screen">
@@ -57,18 +61,13 @@
           </span>
         </span>
       </NuxtLink>
-      <!-- <NuxtLink class="navbar-burger self-center mr-12 xl:hidden" to="/">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-      </NuxtLink> -->
     </nav>
     
   </section>
 </div>
-<div class="fixed bottom-0 right-0 mb-2 mr-4 z-10">
+<div class="fixed bottom-0 right-0 mb-2 mr-4 z-50">
     <div>
-        <NuxtLink to="https://www.github.com/aayu5hgit/" title="Github"  target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:bg-[#12b488] transform hover:scale-110 hover:rotate-12 ">
+        <NuxtLink to="https://www.github.com/aayu5hgit" title="Github"  target="_blank" class="block w-12 h-12 rounded-full transition-all shadow hover:bg-[#12b488] transform hover:scale-110 hover:rotate-12 ">
             <img class="object-cover object-center w-full h-full rounded-full" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
         </NuxtLink>
     </div>
@@ -78,7 +77,7 @@
       <ul class="flex gap-3 ">
         <li><NuxtLink to="/" class="button-sm">Home</NuxtLink></li>
         <li><NuxtLink to="/about" class="button-sm">About</NuxtLink></li>
-        <li><NuxtLink to="/products" class="button-sm">Products</NuxtLink></li>
+        <li><NuxtLink to="/products" class="button-sm" >Products</NuxtLink></li>
         <li><NuxtLink to="/login" class="button-sm">Login</NuxtLink></li>
         <li><NuxtLink to="/profile" class="button-sm">Profile</NuxtLink></li>
       </ul>

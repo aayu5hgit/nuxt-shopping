@@ -19,7 +19,7 @@
               title=""
               class="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"
             >
-              Check all reviews
+              Rate Us & Get Featured
             </a>
           </div>
 
@@ -32,22 +32,21 @@
                 style="
                   background: linear-gradient(
                     90deg,
-                    #44ff9a -0.55%,
-                    #44b0ff 22.86%,
-                    #8b44ff 48.36%,
-                    #ff6644 73.33%,
-                    #ebff70 99.34%
+                    #12b488 -0.55%,
+                    #12b488 22.86%,
+                    #12b488 48.36%,
+                    #12b488 73.33%,
+                    #12b488 99.34%
                   );
                 "
               ></div>
             </div>
-
             <div
               class="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3"
             >
               <div class="flex flex-col overflow-hidden shadow-xl">
                 <div
-                  class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7"
+                  class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 bg-opacity-30 backdrop-filter backdrop-blur-lg"
                 >
                   <div class="flex-1">
                     <div class="flex items-center">
@@ -105,9 +104,7 @@
 
                     <blockquote class="flex-1 mt-8">
                       <p class="text-lg leading-relaxed text-gray-900 font-pj">
-                        “You made it so simple. My new site is so much faster
-                        and easier to work with than my old site. I just choose
-                        the page, make the change.”
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas molestiae delectus saepe sint nisi! Cumque?
                       </p>
                     </blockquote>
                   </div>
@@ -120,10 +117,10 @@
                     />
                     <div class="ml-4">
                       <p class="text-base font-bold text-gray-900 font-pj">
-                        Leslie Alexander
+                        Lorem ipsum
                       </p>
                       <p class="mt-0.5 text-sm font-pj text-gray-600">
-                        Freelance React Developer
+                        Customer
                       </p>
                     </div>
                   </div>
@@ -132,7 +129,7 @@
 
               <div class="flex flex-col overflow-hidden shadow-xl">
                 <div
-                  class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7"
+                  class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 bg-opacity-30 backdrop-filter backdrop-blur-lg"
                 >
                   <div class="flex-1">
                     <div class="flex items-center">
@@ -190,8 +187,7 @@
 
                     <blockquote class="flex-1 mt-8">
                       <p class="text-lg leading-relaxed text-gray-900 font-pj">
-                        “Simply the best. Better than all the rest. I’d
-                        recommend this product to beginners and advanced users.”
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel aut natus eius! Ut, dignissimos nihil!
                       </p>
                     </blockquote>
                   </div>
@@ -204,10 +200,10 @@
                     />
                     <div class="ml-4">
                       <p class="text-base font-bold text-gray-900 font-pj">
-                        Jacob Jones
+                        Lorem Ipsum
                       </p>
                       <p class="mt-0.5 text-sm font-pj text-gray-600">
-                        Digital Marketer
+                        Customer
                       </p>
                     </div>
                   </div>
@@ -216,7 +212,7 @@
 
               <div class="flex flex-col overflow-hidden shadow-xl">
                 <div
-                  class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7"
+                  class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7 bg-opacity-30 backdrop-filter backdrop-blur-lg"
                 >
                   <div class="flex-1">
                     <div class="flex items-center">
@@ -274,9 +270,7 @@
 
                     <blockquote class="flex-1 mt-8">
                       <p class="text-lg leading-relaxed text-gray-900 font-pj">
-                        “I cannot believe that I have got a brand new landing
-                        page after getting Omega. It was super easy to edit and
-                        publish.”
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius rem minus repellendus porro placeat.
                       </p>
                     </blockquote>
                   </div>
@@ -289,10 +283,10 @@
                     />
                     <div class="ml-4">
                       <p class="text-base font-bold text-gray-900 font-pj">
-                        Jenny Wilson
+                        Lorem ipsum
                       </p>
                       <p class="mt-0.5 text-sm font-pj text-gray-600">
-                        Graphic Designer
+                        Customer
                       </p>
                     </div>
                   </div>

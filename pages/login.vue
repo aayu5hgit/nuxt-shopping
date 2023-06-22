@@ -55,7 +55,7 @@ const login = async () => {
 
 
 
-const user = useSupabaseUser()
+const user = useSupabaseUser();
 onMounted(() => {
   watchEffect(() => {
     if (user.value) {
