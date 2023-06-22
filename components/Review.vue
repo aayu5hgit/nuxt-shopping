@@ -21,6 +21,7 @@
             >
               Rate Us & Get Featured
             </a>
+            
           </div>
 
           <div class="relative mt-10 md:mt-24 md:order-2">
@@ -110,11 +111,7 @@
                   </div>
 
                   <div class="flex items-center mt-8">
-                    <img
-                      class="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                      src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png"
-                      alt=""
-                    />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path fill="#111827" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/></svg>
                     <div class="ml-4">
                       <p class="text-base font-bold text-gray-900 font-pj">
                         Lorem ipsum
@@ -193,11 +190,7 @@
                   </div>
 
                   <div class="flex items-center mt-8">
-                    <img
-                      class="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                      src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png"
-                      alt=""
-                    />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path fill="#111827" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/></svg>
                     <div class="ml-4">
                       <p class="text-base font-bold text-gray-900 font-pj">
                         Lorem Ipsum
@@ -276,11 +269,7 @@
                   </div>
 
                   <div class="flex items-center mt-8">
-                    <img
-                      class="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                      src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png"
-                      alt=""
-                    />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path fill="#111827" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/></svg>
                     <div class="ml-4">
                       <p class="text-base font-bold text-gray-900 font-pj">
                         Lorem ipsum
