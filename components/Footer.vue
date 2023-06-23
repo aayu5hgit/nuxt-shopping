@@ -200,7 +200,6 @@
             </form>
           </div>
         </div>
-
         <hr class="mt-10 mb-4 border-gray-200" />
 
         <p class="text-sm text-center text-gray-600">

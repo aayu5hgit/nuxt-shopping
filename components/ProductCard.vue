@@ -5,7 +5,9 @@
       :src="`${product.image}`"
       class="w-28 h-28 self-center hover:scale-110 tansition duration-300 cursor-pointer"
     />
-    <div class="card-title">{{ product.title }}</div>
+    <div class="card-title">{{ product.title }} <br> 
+      <span class="text-xsm text-[#12b488] "> {{product.category}}</span>
+    </div>
 
     <hr class="card-divider" />
     <div class="card-footer">

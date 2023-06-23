@@ -5,13 +5,15 @@
 //     console.log(client);
 //   }
 // }
-// export default {
-//         methods: {
-//             logout() {
-//                 client.auth.signOut
-//             }
-//         }
-//     }
+export default {
+        methods: {
+            logout() {
+                if(client.auth.signOut()){
+                  navigateTo('/login');
+                }
+            }
+        }
+    }
 </script>
 <template>
   <div>
@@ -26,7 +28,9 @@
         <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
           <li><NuxtLink class="hover:text-gray-200 button" to="/">Home</NuxtLink></li>
           <li><NuxtLink class="hover:text-gray-200 button" to="/about">About</NuxtLink></li>
-          <li><NuxtLink class="btn hover:text-gray-200 button" to="/products">Products</NuxtLink></li>
+          <li><NuxtLink class="btn hover:text-gray-200 button" to="/products">
+            <!-- <span v-if="logout">Products</span>  -->
+            Products</NuxtLink></li>
           <li><NuxtLink class="btn hover:text-gray-200 button" to="/login">Login</NuxtLink></li>
         </ul>
 

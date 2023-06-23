@@ -1,6 +1,4 @@
-<script setup lang="js" >
-import { createClient } from "@supabase/supabase-js";
-import { defineComponent } from 'vue'
+<script setup lang="js">
 import { createToast } from 'mosha-vue-toastify';
 import 'mosha-vue-toastify/dist/style.css'
 
@@ -30,7 +28,7 @@ const signUp = async () => {
   })
   console.log('user', user)
   console.log('error', error)
-  
+
 }
 
 const login = async () => {
@@ -40,7 +38,7 @@ const login = async () => {
   })
   console.log('user', user)
   console.log('error', error)
-  
+
 }
 
 
@@ -66,8 +64,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="max-w-lg mx-auto mt-8 text-center"> 
-   
+  <div class="max-w-lg mx-auto mt-8 text-center">
     <h1 class="text-3xl font-black text-[#111827]">ATTIRE</h1>
     <p class="mt-4 font-semibold">
       Fashion that speaks volumes, without saying a word
@@ -76,29 +73,30 @@ onMounted(() => {
       @submit.prevent="() => (isSignUp ? signUp() : login())"
       class="flex flex-col gap-2 mt-12 items-center"
     >
-    <div class="form__group field">
-      <input
-        type="email"
-        placeholder="Email"
-        v-model="email"
-        class="p-2 mb-4 form__field"
-        required
-      /><label for="name" class="form__label">Name</label> </div>
       <div class="form__group field">
-      <input
-        type="password"
-        placeholder="Password"
-        v-model="password"
-        class="p-2 mb-4 form__field"
-        required
-        minlength="6"
-      /><label for="password" class="form__label">Password</label></div>
+        <input
+          type="email"
+          placeholder="Email"
+          v-model="email"
+          class="p-2 mb-4 form__field"
+          required
+        /><label for="name" class="form__label">Name</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="password"
+          placeholder="Password"
+          v-model="password"
+          class="p-2 mb-4 form__field"
+          required
+          minlength="6"
+        /><label for="password" class="form__label">Password</label>
+      </div>
 
       <button type="submit" class="button_l">
         <span v-if="isSignUp" @click="toast"> Sign up </span>
-        <span v-else > Log in </span>
+        <span v-else> Log in </span>
       </button>
-     
     </form>
     <button
       @click="isSignUp = !isSignUp"
@@ -135,7 +133,7 @@ onMounted(() => {
 .form__group {
   position: relative;
   padding: 20px 0 0;
-  width: 80%;    
+  width: 80%;
 }
 
 .form__field {
@@ -191,7 +189,8 @@ onMounted(() => {
 }
 
 /* reset input */
-.form__field:required, .form__field:invalid {
+.form__field:required,
+.form__field:invalid {
   box-shadow: none;
 }
 </style>
