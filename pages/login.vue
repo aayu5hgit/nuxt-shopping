@@ -189,16 +189,25 @@ onMounted(() => {
 
 .form__field:invalid {
   box-shadow: none;
-  border-bottom: solid 2px rgb(236, 116, 116);
-  animation: shake 300ms 5;
-  animation-direction: alternate;
+  animation: justshake 0.7s forwards;
+  color: red;
+  border-bottom: red;
 }
-@keyframes shake {
-  0% {
-    transform: skewY(1deg);
+@keyframes justshake {
+  25% {
+    transform: translateX(5px);
   }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
   100% {
-    transform: skewY(-1deg);
+    transform: translateX-(5px);
   }
 }
 </style>
