@@ -27,7 +27,6 @@
       </VOnboardingWrapper>
       <div class="flex flex-row  justify-center items-center">
         <button @click="start" class="button font-semibold">Onboard</button>
-        <!-- <button @click="finish">Finish Onboarding</button> -->
       </div>
     </div>
     <div class="bg-gray-50">
@@ -65,6 +64,7 @@
                       <button
                         type="submit"
                         class="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-[#111827] rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-[#12b488]"
+                        @click="navigateTo('/login')"
                       >
                         Get Discount
                       </button>

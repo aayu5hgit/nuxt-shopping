@@ -9,7 +9,7 @@
         <p class="text-xl my-7 font-semibold" id="price">
           Price - ${{ product.price }}
         </p>
-        <h3 class="font-bold border-b-2 mb-4 pb-2">Product description:</h3>
+        <h3 class="font-bold border-b-2 mb-4 pb-2">Product Description</h3>
         <p class="mb-7">{{ product.description }}</p>
         <button class="button">
           <div class="flex justify-content-center">
@@ -51,7 +51,7 @@
     </div>
     <hr />
     <div class="container">
-      <h2 class="text-3xl font-bold text-center text-[#111827] mt-8 uppercase">
+      <h2 class="text-3xl font-bold text-center text-[#111827] mt-8 uppercase mb-8">
         Product Reviews
       </h2>
       <div class="mb-2 shadow-lg rounded-t-8xl rounded-b-5xl overflow-hidden">
@@ -150,84 +150,7 @@
                 I haretra neque non mi aliquam, finibus hart bibendum molestie.
                 Vestibulum suscipit sagittis dignissim mauris.
               </p>
-              <div class="-mb-2">
-                <div class="inline-flex w-full md:w-auto md:mr-2 mb-2">
-                  <div
-                    class="flex items-center h-12 pl-2 pr-6 bg-green-100 border-2 border-green-500 rounded-full"
-                  >
-                    <div
-                      class="flex mr-2 w-8 h-8 items-center justify-center bg-white rounded-full text-green-500"
-                    >
-                      <svg
-                        width="11"
-                        height="11"
-                        viewbox="0 0 11 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.016 6.366H6.38V10.092H4.472V6.366H0.836V4.638H4.472V0.911999H6.38V4.638H10.016V6.366Z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="text-green-500 font-heading font-medium"
-                      >tag 1</span
-                    >
-                  </div>
-                </div>
-                <div class="inline-flex w-full md:w-auto md:mr-2 mb-2">
-                  <div
-                    class="flex items-center h-12 pl-2 pr-6 bg-green-100 border-2 border-green-500 rounded-full"
-                  >
-                    <div
-                      class="flex mr-2 w-8 h-8 items-center justify-center bg-white rounded-full text-green-500"
-                    >
-                      <svg
-                        width="11"
-                        height="11"
-                        viewbox="0 0 11 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.016 6.366H6.38V10.092H4.472V6.366H0.836V4.638H4.472V0.911999H6.38V4.638H10.016V6.366Z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="text-green-500 font-heading font-medium"
-                      >tag 2</span
-                    >
-                  </div>
-                </div>
-                <div class="inline-flex w-full md:w-auto mb-2">
-                  <div
-                    class="flex items-center h-12 pl-2 pr-6 bg-green-100 border-2 border-green-500 rounded-full"
-                  >
-                    <div
-                      class="flex mr-2 w-8 h-8 items-center justify-center bg-white rounded-full text-green-500"
-                    >
-                      <svg
-                        width="11"
-                        height="11"
-                        viewbox="0 0 11 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.016 6.366H6.38V10.092H4.472V6.366H0.836V4.638H4.472V0.911999H6.38V4.638H10.016V6.366Z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="text-green-500 font-heading font-medium"
-                      >tag 3</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>  
             <div class="w-full md:w-1/3 text-right">
               <p class="mb-8 text-sm text-gray-500">Added 2 months ago</p>
             </div>
@@ -433,83 +356,7 @@
                 I haretra neque non mi aliquam, finibus hart bibendum molestie.
                 Vestibulum suscipit sagittis dignissim mauris.
               </p>
-              <div class="-mb-2">
-                <div class="inline-flex w-full md:w-auto md:mr-2 mb-2">
-                  <div
-                    class="flex items-center h-12 pl-2 pr-6 bg-green-100 border-2 border-green-500 rounded-full"
-                  >
-                    <div
-                      class="flex mr-2 w-8 h-8 items-center justify-center bg-white rounded-full text-green-500"
-                    >
-                      <svg
-                        width="11"
-                        height="11"
-                        viewbox="0 0 11 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.016 6.366H6.38V10.092H4.472V6.366H0.836V4.638H4.472V0.911999H6.38V4.638H10.016V6.366Z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="text-green-500 font-heading font-medium"
-                      >tag 1</span
-                    >
-                  </div>
-                </div>
-                <div class="inline-flex w-full md:w-auto md:mr-2 mb-2">
-                  <div
-                    class="flex items-center h-12 pl-2 pr-6 bg-green-100 border-2 border-green-500 rounded-full"
-                  >
-                    <div
-                      class="flex mr-2 w-8 h-8 items-center justify-center bg-white rounded-full text-green-500"
-                    >
-                      <svg
-                        width="11"
-                        height="11"
-                        viewbox="0 0 11 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.016 6.366H6.38V10.092H4.472V6.366H0.836V4.638H4.472V0.911999H6.38V4.638H10.016V6.366Z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="text-green-500 font-heading font-medium"
-                      >tag 2</span
-                    >
-                  </div>
-                </div>
-                <div class="inline-flex w-full md:w-auto mb-2">
-                  <div
-                    class="flex items-center h-12 pl-2 pr-6 bg-green-100 border-2 border-green-500 rounded-full"
-                  >
-                    <div
-                      class="flex mr-2 w-8 h-8 items-center justify-center bg-white rounded-full text-green-500"
-                    >
-                      <svg
-                        width="11"
-                        height="11"
-                        viewbox="0 0 11 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.016 6.366H6.38V10.092H4.472V6.366H0.836V4.638H4.472V0.911999H6.38V4.638H10.016V6.366Z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="text-green-500 font-heading font-medium"
-                      >tag 3</span
-                    >
-                  </div>
-                </div>
-              </div>
+              
             </div>
             <div class="w-full md:w-1/3 text-right">
               <p class="mb-8 text-sm text-gray-500">Added 2 months ago</p>
