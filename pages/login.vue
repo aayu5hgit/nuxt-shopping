@@ -38,10 +38,7 @@ const login = async () => {
   })
   console.log('user', user)
   console.log('error', error)
-
 }
-
-
 //   async function signInWithGitHub() {
 //   const { data, error } = await supabase.auth.signInWithOAuth({
 //     provider: 'github',
@@ -93,7 +90,7 @@ onMounted(() => {
         /><label for="password" class="form__label">Password</label>
       </div>
 
-      <button type="submit" class="button_l">
+      <button type="submit" class="button_l" >
         <span v-if="isSignUp" @click="toast"> Sign up </span>
         <span v-else> Log in </span>
       </button>
@@ -189,8 +186,19 @@ onMounted(() => {
 }
 
 /* reset input */
-.form__field:required,
+
 .form__field:invalid {
   box-shadow: none;
+  border-bottom: solid 2px rgb(236, 116, 116);
+  animation: shake 300ms 5;
+  animation-direction: alternate;
+}
+@keyframes shake {
+  0% {
+    transform: skewY(1deg);
+  }
+  100% {
+    transform: skewY(-1deg);
+  }
 }
 </style>
