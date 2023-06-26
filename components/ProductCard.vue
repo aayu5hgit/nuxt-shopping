@@ -1,4 +1,5 @@
 <template>
+  
   <div class="container">
   <div class="card">
     <img
@@ -23,6 +24,7 @@
     </div>
   </div>
 </div>
+
 </template>
 
 
@@ -30,7 +32,7 @@
 const { product } = defineProps(["product"]);
 </script>
 
-<style scoped>
+<style >
 .card {
   --font-color: #323232;
   --font-color-sub: #666;
